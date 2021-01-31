@@ -1,0 +1,22 @@
+{
+  "name": "sownext",
+  "version": "1.0.0",
+  "description": "next",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/qygw/sownext.git"
+  },
+  "keywords": [
+    "sownext"
+  ],
+  "author": "cht",
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <script type="text/javascript">
+   function is_phone(){ 
+    var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+    var info = navigator.userAgent;
+    var len = os.length; 
+    for (var i = 0; i < len; i++) {
+        if (info.indexOf(os[i]) > 0){
+            return true;
+        }
+    }
+    return false;
+}
+// 检测是手机端
+ 
+  </script>
+ </head>
+ <body>
+     <script>
+        if(is_phone()==false){ 
+            window.location ="./pc/index.html"; 
+        }
+        else{
+            window.location ="./mobile/index.html"
+        }
+
+     </script>
+ </body>
+</html>
+

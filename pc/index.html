@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星火商店</title>
+
+    <link rel="stylesheet" href="../states/css/style.css">
+    <script>
+        function jump(temp) {
+            window.location.href = temp;
+        }
+        function is_phone(){ 
+            var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+            var info = navigator.userAgent;
+            var len = os.length; 
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+     <script>
+        if(is_phone()==true){ 
+            window.location ="../mobile/index.html"; 
+        }
+    </script>
+
+    <div id="app">
+    <div id="header" class="static">
+        <ul>
+            <li class="top-logo"><a href="index.html">Spark store</a></li>
+            <!--<li><a href="index.html">主页</a></li>
+            <li><a href="https://www.deepinos.org">博客</a></li>
+            <li><a href="https://www.deepinos.org">论坛</a></li>
+            <li><a href="about.html">关于</a></li>-->
+            <li v-for="item in url"><a :href="item.location">{{item.name}}</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <ul>
+        <li class="top-logo"><a href="index.html">Spark store</a></li>
+        <div class="dropdown2">
+            <button class="dropbtn" ><a>More</a></button>
+            <div class="dropdown-content">
+                <a href="index.html">{{url[0].name}}</a>
+                <a href="https://www.deepinos.org">{{url[1].name}}</a>
+                <a href="https://www.deepinos.org">{{url[2].name}}</a>
+                <a href="about.html">{{url[3].name}}</a>
+            <!--<a  v-for="item in url" :href="item.location">{{item.name}}</a>-->
+            </div>
+        </div>
+        </ul>
+    </div>
+
+    <div id="container" class="get_the_top" style="width:100%">
+        <table width="100%" border="0">
+            <tr>
+                <td style="background-image:url('../states/img/波纹0.svg');
+                           background-size:cover;
+                           background-repeat:no-repeat;">
+                    <center>
+                        <h1>
+                            <p class="title" style="margin-top:0px;">Spark Store</p>
+                            <p class="title2">指尖一触，即是万物</p>
+                        </h1>
+                        <div>
+                            <br>
+                            <button class="button button1" onclick="jump('#download')"><span>{{name}}</span></button>
+                        </div>
+                    </center>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="more" class="pos_down_top" >
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="14" color="gray"> &nbsp;&nbsp;星火的</font><font size="14" color=black>渊源</font><br>
+             <p class="p_font">&emsp; 由深度科技论坛大佬shenmo发起的星火团队致力于丰富 Linux 生态，取“星星之火，可以燎原”之意，组建了星火应用商店。我们是个年轻的团队，大部分成员是00后，有小学生，中学生，大学生，来自五湖四海。</p>
+        <p class="p_font"> &emsp; 尽管我们年龄不同，资历不同,但是我们努力建设linux生态的目标是相同的，我们有信心、也有勇气向着我们共同目标不断前进！</p>
+        </div>
+    </div>
+    <div class="pos_down_top2">
+        <div class="center">
+            <center><font size="6" face="Light">这里有</font></center>
+        </div>
+    </div>
+    <div class="center_all">
+    
+    <div class="pos_down">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;开源社区的</font><font size="6" color=black>自由</font><br>
+            <p class="p_font">从客户端到服务端，<br>代码全部开源，自由修改</p>
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;简约美观的<font color="black">界面</font></font>
+            <br><p class="p_font">dtk 5 开发，毛玻璃侧栏，<br>
+                            给您简约优雅的体验。</p>
+        </div>
+    </div>       
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;丰富多样的<font color="black">应用</font></font>
+            <br>
+            <p class="p_font">社区收集，真人审核与上架,<br>
+                多而可控的应用存储</p></div>
+    </div>
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;社区合作的<font color="black">锻炼</font></font>
+            <br>
+            <p class="p_font">这里有你的位置<br>
+                来发挥你的才能吧</p>
+            <img src="../states/img/javascript.jpeg" height=80px></img>
+            <img src="../states/img/qt.jpeg" height=80px ></img>
+            <img src="../states/img/css.jpeg" height=80px ></img></div>
+    </div>
+    <div class="pos_down_2">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;星火被<font color="black">认可</font></font>
+            <br>
+            <p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社区打包的OBS获得官方的认可。社区的包被传到aur上获得arch用户的好评。社区的包不容易和系统产生冲突，而且目录结构非常简单，这也是社区包的一个优点。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社区里有丰富的wine打包。而且对于wine应用的解决得心应手。这也算我们的优势（？</p>
+        </div>
+    </div>
+     <div id="download" class="pos_down_3">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;deepin<font color="black">下载</font></font>
+            <br>
+        </div>
+        <div class="pos_down_inside">
+        <div class="center2">
+            <img src="../states/img/小红点.svg"></img><font size="5" color="gray">&nbsp;&nbsp;deepin<font color="black">下载</font></font>
+            <br>
+            <p>
+                deepin下载这里<br>
+            </p>
+                <button class="button button1" onclick="jump('#download')"><span>下载体验</span></button>
+        </div>
+        </div>
+        <div class="pos_down_inside">
+            <div class="center2">
+                <img src="../states/img/小红点.svg"></img><font size="5" color="gray">&nbsp;&nbsp;debian<font color="black">依赖</font></font>
+                <br>
+                <p>
+                    依赖补充下载<br>
+                </p>
+                <button class="button button1" onclick="jump('#download')"><span>下载体验</span></button>
+            </div>
+        </div>
+        <div class="pos_down_inside">
+            <div class="center2">
+                <img src="../states/img/小红点.svg"></img><font size="5" color="gray">&nbsp;&nbsp;投递入口<font color="black">这里</font></font>
+                <br>
+                <p>
+                从这里给我们投递软件    
+                </p>
+                <button class="button button1" onclick="jump('#download')"><span>下载体验</span></button>
+            </div>
+        </div>
+        <div class="pos_down_inside">
+            <div class="center2">
+                <img src="../states/img/小红点.svg"></img><font size="5" color="gray">&nbsp;&nbsp;反馈我们<font color="black">这里</font></font>
+                <br>
+                <p>
+                从这里给我们反馈
+                </p>
+                <button class="button button1" onclick="jump('#download')"><span>反馈我们</span></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="pos_down_2">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;要洽饭<font color="black">的嘛</font></font>
+            <br>
+            <p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们需要钱。零花钱。可以援助我们吗？<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以加入我们吗？我们的qq群是</p>
+            <img src="../states/img/money.jpeg"></img><br>
+            <audio src="../states/sounds/money.wav"  controls="controls" loop="loop" preload="auto" >
+
+你的浏览器不支持video元素
+
+</audio>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+        <script src="change_language.js"></script>
+</body>
+
+</html>

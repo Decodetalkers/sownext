@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>星火商店</title>
+
+    <link rel="stylesheet" href="../states/css/style_for_mobile.css">
+    <script>
+        function jump(temp) {
+            window.location.href = temp;
+        }
+        function is_phone(){ 
+            var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+            var info = navigator.userAgent;
+            var len = os.length; 
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <ul>
+        <li class="top-logo"><a href="index.html">Spark store</a></li>
+        <div class="dropdown2">
+            <button class="dropbtn"><a>More</a></button>
+            <div class="dropdown-content">
+            <a href="index.html">主页</a>
+            <a href="https://www.deepinos.org">博客</a>
+            <a href="https://www.deepinos.org">论坛</a>
+            <a href="https://www.deepinos.org">反馈</a>
+            </div>
+        </div>
+        </ul>
+    </div>
+    <div id="container" class="get_the_top" style="width:100%">
+        <table width="100%" border="0">
+            <tr>
+                <td style="background-image:url('../states/img/波纹.svg');
+                           background-size:cover;
+                           background-repeat:no-repeat;">
+                    <center>
+                        <h1>
+                            <p class="title" style="margin-top:0px;">Spark Store</p>
+                            <p class="title2">指尖一触，即是万物</p>
+                        </h1>
+                        <div>
+                            <button class="button button1" onclick="jump('about.html')"><span>了解更多</span></button>
+                            <br>
+                        </div>
+                    </center>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="center_all">
+    <div class="pos_down">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="14" color="gray"> &nbsp;&nbsp;星火的</font><font size="14" color=black>渊源</font><br>
+             <p class="p_font">&emsp; 由深度科技论坛大佬shenmo发起的星火团队致力于丰富 Linux 生态，取“星星之火，可以燎原”之意，组建了星火应用商店。我们是个年轻的团队，大部分成员是00后，有小学生，中学生，大学生，来自五湖四海。</p>
+        <p class="p_font"> &emsp; 尽管我们年龄不同，资历不同,但是我们努力建设linux生态的目标是相同的，我们有信心、也有勇气向着我们共同目标不断前进！</p>   
+        </div>
+    </div>
+
+    <div class="pos_down">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="14" color="gray"> &nbsp;&nbsp;开源社区的</font><font size="14" color=black>自由</font><br>
+            <p class="p_font">从客户端到服务端，<br>代码全部开源，自由修改</p>
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center">
+            <img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;简约美观的<font color="black">界面</font></font>
+            <br><p class="p_font">dtk 5 开发，毛玻璃侧栏，<br>
+                            给您简约优雅的体验。</p>
+        </div>
+    </div>       
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;丰富多样的<font color="black">应用</font></font>
+            <br><p class="p_font">
+            社区收集，真人审核与上架,<br>
+            多而可控的应用存储</p>
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;请你<font color="black">加入我们</font></font>
+            <br><p class="p_font">
+            我们需要投递人员和社区开发者<br>
+            你可以在这里锻炼你的技能</p><br><br>
+            <img src="../states/img/javascript.jpeg" height=200px></img>
+            <img src="../states/img/qt.jpeg" height=200px ></img>
+            <img src="../states/img/css.jpeg" height=200px ></img>
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;获取<font color="black">源代码</font></font>
+            <br>
+            <a class="goto" href="https://www.baidu.com"><p class="p_font">
+            星火网页端源代码<br>
+            持续更新中</p></a>
+
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;下载<font color="black">商店</font></font>
+            <br>
+            <a class="goto" href="https://www.baidu.com"><p class="p_font">
+            请用电脑浏览器访问下载<br>
+            持续更新中</p></a>
+
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center"><img src="../states/img/小红点.svg"></img><font size="14" color="gray">&nbsp;&nbsp;打赏<font color="black">我们</font></font>
+            <br>
+            <a class="goto" href="https://www.baidu.com"><p class="p_font">
+            如果可以的话<br>
+            捐助我们吧</p></a>
+            <img src="../states/img/money.jpeg" width=50% height=33%></img>
+
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>
